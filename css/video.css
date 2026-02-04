@@ -9,10 +9,14 @@ header {
 }
 
 header nav{
+    position: absolute;
     width: fit-content;    
-    height: 60px;
-    margin: 0 auto;
+    height: 60px;    
     background-color: white;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
 }
 
 nav .item{
