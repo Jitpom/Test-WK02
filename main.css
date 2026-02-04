@@ -14,7 +14,7 @@ main {
     padding: 32px;
 }
 
-article{
+article {
     display: inline-block;
     position: relative;
     margin: 0;
@@ -29,22 +29,56 @@ article:last-child {
     margin-right: 0;
 }
 
-article h1{
+article h1 {
     text-align: center;
 }
 
-article .primary-button{
+article .primary-button {
     position: absolute;
     bottom: 16px;
     left: 50%;
     transform: translateX(-50%);
-    padding: 8px 16px;
+    /* padding: 8px 16px; */
     background-color: lightskyblue;
     border: none;
     cursor: pointer;
     width: 100px;
+    height: 60px;
+    box-sizing: border-box;
 }
 
-.primary-button h3{
+.primary-button h3 {
     text-align: center;
+    margin: 0;
+    line-height: 60px;
+    color: black;
+    transition: 1s ease-in-out;
 }
+
+.primary-button .content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.content .moving-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: firebrick;
+    transform: translateX(-100%);
+    z-index: -1;
+    transition: 1s ease-in-out;
+}
+
+.content:hover .moving-bar{
+    transform: translateX(0px);
+}
+
+.content:hover h3{
+    color: white;
+}
+
