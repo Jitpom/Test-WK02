@@ -113,12 +113,20 @@ main {
 
 
 .box h1{
+    font-weight: 900;
     text-align: center;
     line-height: 200px;
     font-size: 3rem;
     color: #333;
-    text-shadow: 2px 2px 0px #f80057,
-                 4px 4px 0px #080808;
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    /* text-shadow: 2px 2px 0px #f80057,
+                 4px 4px 0px #080808; */
 }
 
 footer {
